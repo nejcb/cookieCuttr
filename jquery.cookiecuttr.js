@@ -228,19 +228,7 @@
                 });
                 if (options.cookieDomain) {
                     // kill google analytics cookies
-                    $.cookie("__utma", null, {
-                        domain: '.' + options.cookieDomain,
-                        path: '/'
-                    });
-                    $.cookie("__utmb", null, {
-                        domain: '.' + options.cookieDomain,
-                        path: '/'
-                    });
-                    $.cookie("__utmc", null, {
-                        domain: '.' + options.cookieDomain,
-                        path: '/'
-                    });
-                    $.cookie("__utmz", null, {
+                    $.cookie("_ga", null, {
                         domain: '.' + options.cookieDomain,
                         path: '/'
                     });
